@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --transparent-white-paragraph: hsla(0, 0%, 100%, 0.75);
+  --transparent-white-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  color: var(--white);
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 240px;
+}
+
+p {
+  color: var(--transparent-white-paragraph);
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+span {
+  color: var(--soft-violet);
+}
+
+.card-container {
+  position: relative;
+  background-color: var(--dark-desaturated-blue);
+  border-radius: 10px;
+  width: 300px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.data-container {
+  margin-top: 30px;
+}
+
+.info-container {
+  margin-top: 30px;
+}
+
+.info-container p {
+  margin-top: 26px;
+}
+
+.img-container {
+  height: 240px;
+}
+
+.img-color-container {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 240px;
+  background-color: hsla(277, 64%, 61%, 0.7);
+  z-index: 1;
+  border-radius: 10px 0px 0px 0px;
+}
+
+.templates-container {
+  margin-top: 24px;
+}
+
+.queries-container {
+  margin: 24px 0px 36px 0px;
+}
+
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 45px;
+  }
+
+  p {
+    font-size: 20px;
+    text-align: left;
+    line-height: 34px;
+  }
+
+  .card-container {
+    height: 448px;
+    width: 1168px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .img-color-container {
+    border-radius: 0px 10px 10px 0px;
+    height: 100%;
+  }
+
+  .img-container img {
+    display: none;
+  }
+
+  .img-container {
+    background-image: url("./../assets/image-header-desktop.jpg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-left: 100px;
+  }
+
+  .info-container {
+    margin-left: 80px;
+    width: 1080px;
+  }
+
+  .info-container h2 {
+    text-align: left;
+  }
+
+  .info-container p {
+    margin-left: 6px;
+    margin-top: 50px;
+  }
+
+  .data-container {
+    position: absolute;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    left: 4%;
+    bottom: 5%;
+    width: 46%;
+  }
+
+  .data-container h2 {
+    text-align: left;
+    font-size: 30px;
+  }
+
+  .data-container p {
+    text-align: left;
+    margin-top: 4px;
+    width: 100px;
+  }
+}
